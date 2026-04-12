@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Roles — Mipos Careers</title>
+  <meta name="description"
+    content="Browse open positions at Mipos ShopTech. E-Commerce, Business Development, POS Technical, and Warehouse roles available in Cheras, KL." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F97316", "primary-hover": "#EA580C", secondary: "#FB923C", accent: "#FCD34D",
+            "bg-light": "#FFF7ED", "bg-dark": "#1F1528",
+            "surface-light": "#FFFFFF", "surface-dark": "#2D2438",
+            "text-main": "#374151", "text-dark": "#E5E7EB",
+          },
+          fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"], body: ["Nunito", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+
+<body
+  class="bg-bg-light dark:bg-bg-dark font-body text-text-main dark:text-text-dark transition-colors duration-300 antialiased">
+
+  <!-- Nav -->
+  <nav
+    class="fixed w-full z-50 bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-orange-100 dark:border-white/10"
+    id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3 group">
+          <div
+            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-2xl">rocket_launch</span>
+          </div>
+          <span class="font-display font-bold text-3xl tracking-wide text-gray-900 dark:text-white">Mipos</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/">Home</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/missions">Missions</a>
+          <a class="font-bold text-primary transition-colors" href="/openings">Openings</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/blog">Blog</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 transition-colors text-primary"
+            id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="material-icons-round dark:hidden">dark_mode</span>
+            <span class="material-icons-round hidden dark:block">light_mode</span>
+          </button>
+          <button
+            class="md:hidden p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300"
+            id="mobile-menu-btn" aria-label="Open menu">
+            <span class="material-icons-round">menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/">Home</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/missions">Missions</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-primary bg-orange-50 dark:bg-white/5"
+          href="/openings">Openings</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/blog">Blog</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="pt-32 pb-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span
+        class="inline-block py-1 px-3 rounded-full bg-orange-100 dark:bg-orange-900/30 text-primary text-sm font-bold mb-4 border border-orange-200 dark:border-orange-700/50">WE
+        ARE HIRING</span>
+      <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
+        Join the <span class="text-primary">Mipos Galaxy</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Find the role that fits your orbit. We're building Malaysia's #1 Shop Technology brand.
+      </p>
+    </div>
+  </header>
+
+  <!-- Filter tabs + Job listings -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-tabs">
+      <button class="px-6 py-2 rounded-full bg-primary text-white font-bold shadow-lg filter-btn"
+        data-filter="all">All</button>
+      <button
+        class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold filter-btn"
+        data-filter="e-commerce">E-Commerce</button>
+      <button
+        class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold filter-btn"
+        data-filter="sales">Sales</button>
+      <button
+        class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold filter-btn"
+        data-filter="technical">Technical</button>
+      <button
+        class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold filter-btn"
+        data-filter="warehouse">Warehouse</button>
+    </div>
+
+    <div class="space-y-6" id="job-list">
+      <!-- E-Commerce Executive -->
+      <div
+        class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-md hover:shadow-xl border border-transparent hover:border-primary/30 transition-all hover:-translate-y-1 job-card"
+        data-dept="e-commerce">
+        <div class="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-3 mb-2">
+              <span
+                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase">E-Commerce</span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">place</span> Cheras, KL (On-site)
+              </span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">schedule</span> Full-time
+              </span>
+            </div>
+            <h3
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
+              E-Commerce Executive (Mandarin Speaker)
+            </h3>
+            <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                Online CS + showroom sales + content creation</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                RM3,300 – RM5,000 | Career path to RM6,800+</li>
+            </ul>
+          </div>
+          <a href="/jobs/ecom"
+            class="bg-gray-50 dark:bg-white/5 hover:bg-primary hover:text-white text-primary border-2 border-primary/20 hover:border-primary font-bold py-3 px-8 rounded-xl transition-all flex items-center gap-2 shrink-0">
+            View Details <span class="material-icons-round text-lg">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- POS BD Executive -->
+      <div
+        class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-md hover:shadow-xl border border-transparent hover:border-primary/30 transition-all hover:-translate-y-1 job-card"
+        data-dept="sales">
+        <div class="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-3 mb-2">
+              <span
+                class="bg-green-100 dark:bg-green-900/40 text-green-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Sales</span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">place</span> Cheras, KL (On-site)
+              </span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">schedule</span> Full-time
+              </span>
+            </div>
+            <h3
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
+              POS Business Development Executive
+            </h3>
+            <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                Inbound leads, POS system sales, installation & technical support</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                RM3,400 base + performance-based bonuses</li>
+            </ul>
+          </div>
+          <a href="/jobs/bd"
+            class="bg-gray-50 dark:bg-white/5 hover:bg-primary hover:text-white text-primary border-2 border-primary/20 hover:border-primary font-bold py-3 px-8 rounded-xl transition-all flex items-center gap-2 shrink-0">
+            View Details <span class="material-icons-round text-lg">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- POS Customer Success Executive -->
+      <div
+        class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-md hover:shadow-xl border border-transparent hover:border-primary/30 transition-all hover:-translate-y-1 job-card"
+        data-dept="technical">
+        <div class="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-3 mb-2">
+              <span
+                class="bg-amber-100 dark:bg-amber-900/40 text-amber-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Technical</span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">place</span> Cheras, KL (On-site)
+              </span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">schedule</span> Full-time
+              </span>
+            </div>
+            <h3
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
+              POS Customer Success Executive
+            </h3>
+            <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span> POS
+                deployment, training, after-sales technical support</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                RM3,000 – RM5,000 | 3-tier career ladder</li>
+            </ul>
+          </div>
+          <a href="/jobs/pos"
+            class="bg-gray-50 dark:bg-white/5 hover:bg-primary hover:text-white text-primary border-2 border-primary/20 hover:border-primary font-bold py-3 px-8 rounded-xl transition-all flex items-center gap-2 shrink-0">
+            View Details <span class="material-icons-round text-lg">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Warehouse Assistant -->
+      <div
+        class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-md hover:shadow-xl border border-transparent hover:border-primary/30 transition-all hover:-translate-y-1 job-card"
+        data-dept="warehouse">
+        <div class="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-3 mb-2">
+              <span
+                class="bg-purple-100 dark:bg-purple-900/40 text-purple-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Warehouse</span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">place</span> Cheras, KL (On-site)
+              </span>
+              <span class="flex items-center text-gray-400 text-sm gap-1">
+                <span class="material-icons-round text-base">schedule</span> Full-time
+              </span>
+            </div>
+            <h3
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
+              Warehouse Assistant
+            </h3>
+            <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                Order packing, stock management, receiving & organizing</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                RM1,900 – RM2,100 | Clear advancement path</li>
+            </ul>
+          </div>
+          <a href="/jobs/warehouse"
+            class="bg-gray-50 dark:bg-white/5 hover:bg-primary hover:text-white text-primary border-2 border-primary/20 hover:border-primary font-bold py-3 px-8 rounded-xl transition-all flex items-center gap-2 shrink-0">
+            View Details <span class="material-icons-round text-lg">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16 bg-primary rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden shadow-2xl">
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full"></div>
+      <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-white/5 rounded-full"></div>
+      <h2 class="text-3xl font-display font-bold mb-4 relative z-10">Don't see your role?</h2>
+      <p class="text-orange-100 text-lg mb-8 max-w-xl mx-auto relative z-10">
+        Send us your resume. We're always scouting for new talent to join the crew.
+      </p>
+      <a href="/contact"
+        class="relative z-10 inline-flex items-center gap-2 bg-white text-primary hover:bg-orange-50 font-bold py-3 px-8 rounded-xl shadow-lg transition-colors">
+        <span class="material-icons-round">mail</span> Contact Us
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+              <span class="material-icons-round text-xl">rocket_launch</span>
+            </div>
+            <span class="font-display font-bold text-xl text-gray-900 dark:text-white">Mipos ShopTech</span>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Malaysia's #1 Shop Technology Provider.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/openings" class="hover:text-primary transition-colors">Open Roles</a></li>
+            <li><a href="/missions" class="hover:text-primary transition-colors">Missions</a></li>
+            <li><a href="/blog" class="hover:text-primary transition-colors">Blog</a></li>
+            <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Location</h4>
+          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">No.29, Jalan 2, Taman Len Seng,<br>56000
+            Cheras, WP Kuala Lumpur</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-100 dark:border-white/5 pt-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2026 Mipos Sdn Bhd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script>
+    // Job filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const jobCards = document.querySelectorAll('.job-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-white', 'shadow-lg');
+          b.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-300');
+        });
+        btn.classList.add('bg-primary', 'text-white', 'shadow-lg');
+        btn.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-300');
+
+        jobCards.forEach(card => {
+          if (filter === 'all' || card.dataset.dept === filter) {
+            card.style.display = '';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
+            requestAnimationFrame(() => {
+              card.style.transition = 'opacity 0.3s, transform 0.3s';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            });
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

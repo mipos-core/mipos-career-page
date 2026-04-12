@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Mipos Careers</title>
+  <meta name="description"
+    content="Stories from the Mipos crew — culture, growth, and team spotlights from Malaysia's #1 Shop Technology Provider." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: { primary: "#F97316", "primary-hover": "#EA580C", "bg-light": "#FFF7ED", "bg-dark": "#1F1528", "surface-light": "#FFFFFF", "surface-dark": "#2D2438" },
+          fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"], body: ["Nunito", "sans-serif"] },
+        }
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+
+<body class="bg-bg-light dark:bg-bg-dark font-body transition-colors duration-300 antialiased">
+  <!-- Nav -->
+  <nav
+    class="fixed w-full z-50 bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-orange-100 dark:border-white/10"
+    id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg"><span
+              class="material-icons-round text-2xl">rocket_launch</span></div><span
+            class="font-display font-bold text-3xl text-gray-900 dark:text-white">Mipos</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/">Home</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/missions">Missions</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/openings">Openings</a>
+          <a class="font-bold text-primary" href="/blog">Blog</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-primary"
+            id="theme-toggle"><span class="material-icons-round dark:hidden">dark_mode</span><span
+              class="material-icons-round hidden dark:block">light_mode</span></button>
+          <button
+            class="md:hidden p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300"
+            id="mobile-menu-btn"><span class="material-icons-round">menu</span></button>
+        </div>
+      </div>
+      <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300" href="/">Home</a><a
+          class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300"
+          href="/missions">Missions</a><a
+          class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300"
+          href="/openings">Openings</a><a
+          class="block py-2 px-4 rounded-xl font-bold text-primary bg-orange-50 dark:bg-white/5"
+          href="/blog">Blog</a><a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300"
+          href="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="pt-32 pb-16 relative">
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-50 via-orange-100/30 to-white dark:from-purple-900/20 dark:via-bg-dark dark:to-bg-dark -z-10">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span
+        class="inline-block py-1 px-3 rounded-full bg-orange-100 dark:bg-orange-900/30 text-primary text-sm font-bold mb-6 uppercase border border-orange-200 dark:border-orange-700/50">Mipos
+        Chronicles</span>
+      <h1 class="text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-gray-900 dark:text-white">
+        Explore Our <span class="text-primary">Galactic</span> Journey
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl leading-relaxed">
+        From daily operations to team growth stories. Discover how our small but mighty crew is building the future of
+        retail tech in Malaysia.
+      </p>
+    </div>
+  </header>
+
+  <!-- Blog Cards -->
+  <section class="py-20 bg-bg-light dark:bg-bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 text-gray-900 dark:text-white">Life Inside Mipos
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 text-lg">Peek behind the curtains.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog 1 -->
+        <article
+          class="bg-white dark:bg-surface-dark rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group flex flex-col h-full border border-orange-100 dark:border-white/5">
+          <div
+            class="relative h-56 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900/30 dark:to-purple-900/30 flex items-center justify-center">
+            <div
+              class="absolute top-4 left-4 z-10 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary uppercase">
+              Culture</div>
+            <span class="material-icons-round text-orange-300 dark:text-orange-500/50"
+              style="font-size: 6rem;">smart_toy</span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-sm text-gray-400 mb-3 space-x-2">
+              <span class="material-icons-round text-base">calendar_today</span><span>Apr 2026</span>
+            </div>
+            <h3
+              class="text-xl font-bold font-display mb-3 text-gray-800 dark:text-white group-hover:text-primary transition-colors">
+              Why We Use AI Tools Every Day</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
+              How a team of less than 10 people uses ChatGPT, AI agents, and automation to compete with companies 10x
+              our size. It's not a buzzword — it's how we work.
+            </p>
+            <span class="inline-flex items-center font-bold text-primary cursor-default">Coming Soon <span
+                class="material-icons-round ml-1 text-lg">schedule</span></span>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article
+          class="bg-white dark:bg-surface-dark rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group flex flex-col h-full border border-orange-100 dark:border-white/5">
+          <div
+            class="relative h-56 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-purple-900/30 flex items-center justify-center">
+            <div
+              class="absolute top-4 left-4 z-10 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-600 uppercase">
+              Growth</div>
+            <span class="material-icons-round text-blue-300 dark:text-blue-500/50"
+              style="font-size: 6rem;">trending_up</span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-sm text-gray-400 mb-3 space-x-2">
+              <span class="material-icons-round text-base">calendar_today</span><span>Mar 2026</span>
+            </div>
+            <h3
+              class="text-xl font-bold font-display mb-3 text-gray-800 dark:text-white group-hover:text-primary transition-colors">
+              Real Salary Growth — Not Just Promises</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
+              Real, anonymized career growth data from our team. How disciplined talent actually reaches senior levels
+              faster than at any corporate environment.
+            </p>
+            <span class="inline-flex items-center font-bold text-primary cursor-default">Coming Soon <span
+                class="material-icons-round ml-1 text-lg">schedule</span></span>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article
+          class="bg-white dark:bg-surface-dark rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group flex flex-col h-full border border-orange-100 dark:border-white/5">
+          <div
+            class="relative h-56 overflow-hidden bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900/30 dark:to-purple-900/30 flex items-center justify-center">
+            <div
+              class="absolute top-4 left-4 z-10 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-green-600 uppercase">
+              Spotlight</div>
+            <span class="material-icons-round text-green-300 dark:text-green-500/50"
+              style="font-size: 6rem;">person</span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-sm text-gray-400 mb-3 space-x-2">
+              <span class="material-icons-round text-base">calendar_today</span><span>Feb 2026</span>
+            </div>
+            <h3
+              class="text-xl font-bold font-display mb-3 text-gray-800 dark:text-white group-hover:text-primary transition-colors">
+              From Fresh Grad to Team Lead</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
+              A Mipos crew member's journey through our promotion roadmap — from probation to leading operations. No
+              politics, just performance.
+            </p>
+            <span class="inline-flex items-center font-bold text-primary cursor-default">Coming Soon <span
+                class="material-icons-round ml-1 text-lg">schedule</span></span>
+          </div>
+        </article>
+      </div>
+
+      <!-- More stories CTA -->
+      <div class="mt-16 text-center">
+        <p class="text-gray-500 dark:text-gray-400 mb-4">More stories are on the way. We're building our content
+          library.</p>
+        <a href="/contact" class="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+          <span class="material-icons-round">mail</span> Want to share your story? Contact us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white"><span
+                class="material-icons-round text-xl">rocket_launch</span></div><span
+              class="font-display font-bold text-xl text-gray-900 dark:text-white">Mipos ShopTech</span>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Malaysia's #1 Shop Technology Provider.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/openings" class="hover:text-primary">Open Roles</a></li>
+            <li><a href="/missions" class="hover:text-primary">Missions</a></li>
+            <li><a href="/blog" class="hover:text-primary">Blog</a></li>
+            <li><a href="/contact" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Location</h4>
+          <p class="text-sm text-gray-500 dark:text-gray-400">No.29, Jalan 2, Taman Len Seng,<br>56000 Cheras, WP Kuala
+            Lumpur</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-100 dark:border-white/5 pt-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2026 Mipos Sdn Bhd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+
+</html>

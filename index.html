@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mipos Careers — Build the Future of Retail Tech</title>
+  <meta name="description"
+    content="Join Malaysia's #1 Shop Technology Provider. Fast career growth, AI-powered work, transparent culture. Explore open roles at Mipos ShopTech." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F97316",
+            "primary-hover": "#EA580C",
+            secondary: "#FB923C",
+            accent: "#FCD34D",
+            "bg-light": "#FFF7ED",
+            "bg-dark": "#1F1528",
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#2D2438",
+            "text-main": "#374151",
+            "text-dark": "#E5E7EB",
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Nunito", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+
+<body
+  class="bg-bg-light dark:bg-bg-dark font-body text-text-main dark:text-text-dark transition-colors duration-300 antialiased">
+
+  <!-- Nav -->
+  <nav
+    class="fixed w-full z-50 bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-orange-100 dark:border-white/10"
+    id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3 group">
+          <div
+            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-2xl">rocket_launch</span>
+          </div>
+          <span class="font-display font-bold text-3xl tracking-wide text-gray-900 dark:text-white">Mipos</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="font-bold text-primary transition-colors" href="/">Home</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/missions">Missions</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/openings">Openings</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/blog">Blog</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 transition-colors text-primary"
+            id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="material-icons-round dark:hidden">dark_mode</span>
+            <span class="material-icons-round hidden dark:block">light_mode</span>
+          </button>
+          <a class="hidden md:flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-2.5 px-6 rounded-xl shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5"
+            href="/openings">
+            <span>Board Now</span>
+            <span class="material-icons-round text-sm">arrow_forward</span>
+          </a>
+          <!-- Mobile menu button -->
+          <button
+            class="md:hidden p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300"
+            id="mobile-menu-btn" aria-label="Open menu">
+            <span class="material-icons-round">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+        <a class="block py-2 px-4 rounded-xl font-bold text-primary bg-orange-50 dark:bg-white/5" href="/">Home</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/missions">Missions</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/openings">Openings</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/blog">Blog</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/contact">Contact</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-white bg-primary text-center" href="/openings">Board Now
+          →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden relative">
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-50 via-orange-100/50 to-white dark:from-purple-900/30 dark:via-bg-dark dark:to-bg-dark -z-10">
+    </div>
+    <!-- Decorative stars -->
+    <div class="absolute top-20 left-10 w-2 h-2 bg-accent rounded-full star-twinkle opacity-50"></div>
+    <div class="absolute top-40 right-20 w-3 h-3 bg-primary rounded-full star-twinkle opacity-30"
+      style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-20 left-1/4 w-2 h-2 bg-secondary rounded-full star-twinkle opacity-40"
+      style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left z-10">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 text-primary font-bold text-sm mb-6 border border-orange-200 dark:border-orange-700/50">
+            <span class="material-icons-round text-sm">emoji_events</span>
+            <span>Malaysia's #1 Shop Technology Provider</span>
+          </div>
+          <h1 class="font-display font-bold text-5xl lg:text-7xl leading-tight mb-6 text-gray-900 dark:text-white">
+            Build the Future of <span class="text-primary">Retail Tech</span>
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Join a crew of less than 10 where your work powers businesses from local cafés to enterprise chains like
+            Starbucks and Sushi King. Real impact from Day 1.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a class="bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-8 rounded-2xl shadow-xl shadow-orange-500/20 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
+              href="/openings">
+              View Open Roles
+              <span class="material-icons-round">arrow_forward</span>
+            </a>
+            <a class="bg-white dark:bg-surface-dark text-gray-700 dark:text-white font-bold text-lg py-4 px-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700 transition-all hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center justify-center gap-2"
+              href="/missions">
+              <span class="material-icons-round text-primary">stars</span>
+              Explore Missions
+            </a>
+          </div>
+        </div>
+        <div class="relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-md floating-mascot z-20">
+            <img src="/images/team-sunmi-group-showroom.jpg" alt="Mipos and Sunmi team group photo at the showroom"
+              class="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl object-cover shadow-2xl border-4 border-white dark:border-gray-700 transform rotate-3" />
+            <div
+              class="absolute -bottom-6 -left-6 bg-white dark:bg-surface-dark p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-bounce"
+              style="animation-duration: 3s;">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <span class="material-icons-round">check_circle</span>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase">Status</p>
+                <p class="font-display font-bold text-gray-800 dark:text-white">Mission Go!</p>
+              </div>
+            </div>
+            <div class="absolute -top-4 -right-4 bg-white dark:bg-surface-dark p-3 rounded-2xl shadow-lg">
+              <div class="flex items-center gap-2">
+                <span class="material-icons-round text-accent text-xl">star</span>
+                <span class="font-bold text-sm text-gray-700 dark:text-gray-200">#1 on Shopee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <section class="py-8 bg-white dark:bg-surface-dark border-y border-orange-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="font-display font-bold text-3xl text-primary">4+</p>
+          <p class="text-gray-500 dark:text-gray-400 font-bold text-sm">Years Growing</p>
+        </div>
+        <div>
+          <p class="font-display font-bold text-3xl text-primary">#1</p>
+          <p class="text-gray-500 dark:text-gray-400 font-bold text-sm">Sunmi Seller on Shopee MY</p>
+        </div>
+        <div>
+          <p class="font-display font-bold text-3xl text-primary">&lt;10</p>
+          <p class="text-gray-500 dark:text-gray-400 font-bold text-sm">Crew Members</p>
+        </div>
+        <div>
+          <p class="font-display font-bold text-3xl text-primary">100+</p>
+          <p class="text-gray-500 dark:text-gray-400 font-bold text-sm">Enterprise Outlets Served</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission / Vision / Values -->
+  <section class="py-24 bg-white dark:bg-bg-dark relative" id="mission">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Coordinates</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">Charting the
+          Unexplored</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-bg-light dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:border-primary transition-all group">
+          <div
+            class="w-16 h-16 bg-white dark:bg-white/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-md group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-3xl">rocket</span>
+          </div>
+          <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-4">Mission</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Help business owners reduce operational costs with technology products. Empower shops with self-service
+            technology solutions.
+          </p>
+        </div>
+        <div
+          class="bg-bg-light dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:border-primary transition-all group">
+          <div
+            class="w-16 h-16 bg-white dark:bg-white/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-md group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-3xl">visibility</span>
+          </div>
+          <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-4">Vision</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            To become a one-stop shop technology center for all F&B and retail businesses in Malaysia.
+          </p>
+        </div>
+        <div
+          class="bg-bg-light dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:border-primary transition-all group">
+          <div
+            class="w-16 h-16 bg-white dark:bg-white/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-md group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-3xl">volunteer_activism</span>
+          </div>
+          <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-4">Values</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Win-win culture. Transparent rules, no office politics. Performance-based rewards — same standards for
+            everyone, including management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Mipos — Differentiators -->
+  <section class="py-24 bg-bg-light dark:bg-bg-dark" id="why-mipos">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm">Why Board This Ship?</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">What Makes Us
+          Different</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            🚀</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Fast Career Growth</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            Clear career ladder with up to 4 promotion levels. Salary review every 3–6 months <strong>on your
+              request</strong>, not yearly. 10–40% annual salary growth for disciplined talent.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            🤖</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">AI-Empowered Team</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            We provide AI tools (ChatGPT, AI agents) for daily work. We don't just talk about innovation — we use it
+            every day to compete with companies 10x our size.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            📊</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Quarterly Reviews</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            Monthly performance sessions + quarterly formal reviews. You always know where you stand and what to
+            improve. No surprise annual reviews.
+          </p>
+        </div>
+        <!-- Card 4 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            🤝</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Win-Win Culture</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            Transparent rules, no office politics. Performance-based rewards — same standards for everyone, including
+            management. We grow together.
+          </p>
+        </div>
+        <!-- Card 5 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-pink-100 dark:bg-pink-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            📚</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">5-Week Onboarding</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            2-week learning → 2-week soft launch → full mode. We set you up to succeed — no throwing into the deep end.
+            Support always available.
+          </p>
+        </div>
+        <!-- Card 6 -->
+        <div
+          class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-orange-100 dark:border-white/5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+          <div
+            class="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:scale-110 transition-transform">
+            💼</div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Real Impact, Small Team</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            Work directly with the CEO in a team of less than 10. Your work directly shapes how customers experience
+            Mipos technology — from Day 1.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Growth Narrative -->
+  <section class="py-24 bg-white dark:bg-surface-dark relative overflow-hidden">
+    <div class="absolute top-10 right-10 w-3 h-3 bg-accent rounded-full star-twinkle opacity-50"></div>
+    <div class="absolute bottom-20 left-20 w-2 h-2 bg-primary rounded-full star-twinkle opacity-30"
+      style="animation-delay: 1.5s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm">Real Growth Stories</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">Career Growth That's
+          Real</h2>
+        <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto text-lg">Anonymized growth stories from our
+          crew — because the numbers speak for themselves.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-purple-900/20 p-8 rounded-3xl border border-orange-200 dark:border-orange-700/30 text-center">
+          <p class="font-display font-bold text-5xl text-primary mb-3">+106%</p>
+          <p class="font-bold text-gray-700 dark:text-gray-200 mb-2">Salary Growth in 3 Years</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">A team member who joined at entry level and grew through
+            disciplined performance reviews.</p>
+        </div>
+        <div
+          class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-3xl border border-blue-200 dark:border-blue-700/30 text-center">
+          <p class="font-display font-bold text-5xl text-blue-600 mb-3">+230%</p>
+          <p class="font-bold text-gray-700 dark:text-gray-200 mb-2">Total Compensation Growth</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Including incentives and performance bonuses, the full
+            package tells the real story.</p>
+        </div>
+        <div
+          class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-purple-900/20 p-8 rounded-3xl border border-green-200 dark:border-green-700/30 text-center">
+          <p class="font-display font-bold text-5xl text-green-600 mb-3">3–6mo</p>
+          <p class="font-bold text-gray-700 dark:text-gray-200 mb-2">Review Cycle</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Salary and position reviews every 3–6 months — on
+            <em>your</em> request, not gated by the company.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-24 bg-bg-light dark:bg-bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm">Crew Benefits</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">What You Get</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-orange-100 dark:border-white/5 text-center">
+          <span class="material-icons-round text-primary text-3xl mb-3 block">event_available</span>
+          <p class="font-bold text-gray-800 dark:text-white mb-1">12 Days Annual Leave</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">14 days from Year 2</p>
+        </div>
+        <div
+          class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-orange-100 dark:border-white/5 text-center">
+          <span class="material-icons-round text-primary text-3xl mb-3 block">local_hospital</span>
+          <p class="font-bold text-gray-800 dark:text-white mb-1">14 Days Sick Leave</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">With medical certificate</p>
+        </div>
+        <div
+          class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-orange-100 dark:border-white/5 text-center">
+          <span class="material-icons-round text-primary text-3xl mb-3 block">account_balance</span>
+          <p class="font-bold text-gray-800 dark:text-white mb-1">EPF + SOCSO + EIS</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Full statutory benefits</p>
+        </div>
+        <div
+          class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-orange-100 dark:border-white/5 text-center">
+          <span class="material-icons-round text-primary text-3xl mb-3 block">celebration</span>
+          <p class="font-bold text-gray-800 dark:text-white mb-1">14 Public Holidays</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">WP KL gazetted</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Life at Mipos — Photo Gallery -->
+  <section class="py-24 bg-white dark:bg-surface-dark overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm">Life at Mipos</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">Work Hard, Play Hard
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto text-lg">Team outings, Korean BBQ nights,
+          Christmas celebrations, and an epic showroom to call home.</p>
+      </div>
+      <!-- Masonry-style gallery -->
+      <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        <img src="/images/showroom-android-flagship.jpg"
+          alt="Mipos ShopTech showroom featuring Android POS terminals and Sunmi hardware"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-outing-luge-gamuda.jpg" alt="Team outing at Gamuda Gardens Luge with colorful helmets"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/ceo-storefront-mipos-shoptech.jpeg" alt="CEO speaking at Mipos ShopTech storefront"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-christmas-party.jpg" alt="Team Christmas party gift exchange"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/showroom-led-menu-display.jpg" alt="LED digital menu boards showing F&B menus"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-outing-atv-adventure.jpg" alt="Team ATV adventure through palm oil plantation"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-core-group-showroom.jpeg" alt="Core Mipos team group photo at showroom"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-lunch-banana-leaf.jpg" alt="Team banana leaf rice lunch outing"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/ceo-presenting-sunmi-ecosystem.jpeg" alt="CEO presenting the Sunmi business ecosystem"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-dinner-korean-bbq-1.jpg" alt="Team Korean BBQ dinner"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/team-members-mipos-office.jpeg" alt="Team members at the Mipos office"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+        <img src="/images/showroom-grocery-pos-kiosk.jpeg"
+          alt="Grocery retail demo with Sunmi POS and self-service kiosk"
+          class="w-full rounded-2xl hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA: Active Missions -->
+  <section class="py-24 relative bg-white dark:bg-bg-dark" id="jobs-cta">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="bg-primary rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+        <!-- Decorative circles -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full"></div>
+        <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-white/5 rounded-full"></div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl mb-4 relative z-10">Ready to Launch Your Career?</h2>
+        <p class="text-orange-100 text-lg mb-8 max-w-2xl mx-auto relative z-10">
+          We're a small team with big impact. If you want to own your work, grow fast, and build something real — let's
+          talk.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+          <a class="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-gray-100 transition-colors"
+            href="/openings">
+            View Open Roles
+            <span class="material-icons-round text-lg">arrow_forward</span>
+          </a>
+          <a class="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold py-3 px-8 rounded-xl hover:bg-white/10 transition-colors"
+            href="/contact">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+              <span class="material-icons-round text-xl">rocket_launch</span>
+            </div>
+            <span class="font-display font-bold text-xl text-gray-900 dark:text-white">Mipos ShopTech</span>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+            Malaysia's #1 Shop Technology Provider. POS terminals, LED menu boards, queue systems — everything a shop
+            needs to run professionally.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/openings" class="hover:text-primary transition-colors">Open Roles</a></li>
+            <li><a href="/missions" class="hover:text-primary transition-colors">Missions</a></li>
+            <li><a href="/blog" class="hover:text-primary transition-colors">Blog</a></li>
+            <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Location</h4>
+          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+            No.29, Jalan 2, Taman Len Seng,<br>
+            56000 Cheras, WP Kuala Lumpur
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+            <span class="material-icons-round text-primary text-lg">schedule</span>
+            Mon–Fri 9am–5pm, Sat 9am–2pm
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-100 dark:border-white/5 pt-8 text-center">
+        <p class="text-sm text-gray-400">© 2026 Mipos Sdn Bhd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+
+</html>

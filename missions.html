@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions — Mipos Careers</title>
+  <meta name="description"
+    content="Mipos project challenges for creative and entrepreneurial talent. Design, content, engineering, and operations missions." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: { primary: "#F97316", "primary-hover": "#EA580C", secondary: "#FB923C", accent: "#FCD34D", "bg-light": "#FFF7ED", "bg-dark": "#1F1528", "surface-light": "#FFFFFF", "surface-dark": "#2D2438" },
+          fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"], body: ["Nunito", "sans-serif"] },
+        }
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+
+<body
+  class="bg-bg-light dark:bg-bg-dark font-body text-gray-700 dark:text-gray-200 transition-colors duration-300 antialiased">
+  <!-- Nav -->
+  <nav
+    class="fixed w-full z-50 bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-orange-100 dark:border-white/10"
+    id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg"><span
+              class="material-icons-round text-2xl">rocket_launch</span></div><span
+            class="font-display font-bold text-3xl text-gray-900 dark:text-white">Mipos</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/">Home</a>
+          <a class="font-bold text-primary" href="/missions">Missions</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/openings">Openings</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/blog">Blog</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary" href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-primary"
+            id="theme-toggle"><span class="material-icons-round dark:hidden">dark_mode</span><span
+              class="material-icons-round hidden dark:block">light_mode</span></button>
+          <button
+            class="md:hidden p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300"
+            id="mobile-menu-btn"><span class="material-icons-round">menu</span></button>
+        </div>
+      </div>
+      <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300" href="/">Home</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-primary bg-orange-50 dark:bg-white/5"
+          href="/missions">Missions</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300"
+          href="/openings">Openings</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300" href="/blog">Blog</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300" href="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-24 overflow-hidden">
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-50 via-orange-100/30 to-white dark:from-purple-900/20 dark:via-bg-dark dark:to-bg-dark -z-10">
+    </div>
+    <div class="absolute top-24 right-16 w-3 h-3 bg-accent rounded-full star-twinkle opacity-40"></div>
+    <div class="absolute bottom-20 left-10 w-2 h-2 bg-primary rounded-full star-twinkle opacity-30"
+      style="animation-delay: 1s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 text-primary font-bold text-sm mb-6 border border-orange-200 dark:border-orange-700/50">
+        <span class="material-icons-round text-base mr-2">stars</span> Calling all Space Explorers
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+        Accept Your <span class="text-primary">Next Mission</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+        Mipos has open challenges for talented people. Complete a mission to show your skills — not just your resume.
+        These are real projects we want built.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Cards -->
+  <section class="py-24 bg-white dark:bg-bg-dark" id="missions">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-wider uppercase text-sm">Open Challenges</span>
+        <h2 class="mt-2 text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">Choose Your Adventure
+        </h2>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 mb-12" id="mission-filters">
+        <button class="px-5 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-md mission-filter-btn"
+          data-filter="all">All Missions</button>
+        <button
+          class="px-5 py-2 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 font-bold text-sm mission-filter-btn"
+          data-filter="design">Design</button>
+        <button
+          class="px-5 py-2 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 font-bold text-sm mission-filter-btn"
+          data-filter="content">Content</button>
+        <button
+          class="px-5 py-2 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 font-bold text-sm mission-filter-btn"
+          data-filter="engineering">Engineering</button>
+        <button
+          class="px-5 py-2 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 font-bold text-sm mission-filter-btn"
+          data-filter="operations">Operations</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="mission-grid">
+        <!-- Mission 1 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="design">
+          <div
+            class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            🎨</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">IP Cartoon Designer</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Design • Contract</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Design an original Mipos IP cartoon mascot for ShopTech branding. Create character sheets, expressions, and
+            use-case mockups for packaging and marketing.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+
+        <!-- Mission 2 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="content">
+          <div
+            class="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            📹</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">TikTok Content Creator</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Content • Part-time</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Create a series of TikTok-style product demos showcasing POS systems, LED menu boards, and queue systems in
+            real shop environments.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+
+        <!-- Mission 3 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="engineering">
+          <div
+            class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            🤖</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">AI Chatbot Builder</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Engineering • Contract</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Build an AI-powered chatbot that helps customers find the right POS system based on their business type,
+            size, and budget.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+
+        <!-- Mission 4 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="operations">
+          <div
+            class="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            📦</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Warehouse Dashboard</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Operations • Contract</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Design and build a warehouse efficiency tracking dashboard — stock levels, order fulfillment speed, and
+            space utilization metrics.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+
+        <!-- Mission 5 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="content">
+          <div
+            class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            📸</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Product Photography</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Content • Freelance</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Professional product photography for POS terminals, LED display boards, and accessories — for Shopee,
+            Lazada, and our website catalog.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+
+        <!-- Mission 6 -->
+        <div
+          class="group bg-white dark:bg-surface-dark rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full mission-card"
+          data-category="design">
+          <div
+            class="w-12 h-12 bg-rose-100 dark:bg-rose-900/30 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+            🎯</div>
+          <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Marketing Kit Designer</h3>
+          <p class="text-sm font-bold text-primary mb-4 uppercase tracking-wide">Design • Contract</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
+            Create a complete marketing kit — brochures, social media templates, product one-pagers — for the ShopTech
+            brand to share with partners.
+          </p>
+          <a href="/contact"
+            class="block w-full py-3 rounded-xl border-2 border-gray-100 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold text-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-colors">Start
+            Mission</a>
+        </div>
+      </div>
+
+      <!-- Pitch your own -->
+      <div
+        class="mt-16 text-center bg-orange-50 dark:bg-surface-dark rounded-3xl p-8 md:p-12 border border-orange-100 dark:border-gray-700">
+        <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-4">Don't see a mission for you?</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">Pitch your own project idea. We love creative
+          proposals from people who see opportunities we haven't.</p>
+        <a href="/contact"
+          class="inline-flex items-center px-6 py-3 rounded-xl bg-white dark:bg-gray-800 text-gray-800 dark:text-white font-bold shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-gray-600">
+          <span class="material-icons-round mr-2 text-primary">mail</span> Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white"><span
+                class="material-icons-round text-xl">rocket_launch</span></div><span
+              class="font-display font-bold text-xl text-gray-900 dark:text-white">Mipos ShopTech</span>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Malaysia's #1 Shop Technology Provider.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/openings" class="hover:text-primary">Open Roles</a></li>
+            <li><a href="/missions" class="hover:text-primary">Missions</a></li>
+            <li><a href="/blog" class="hover:text-primary">Blog</a></li>
+            <li><a href="/contact" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 dark:text-white mb-4">Location</h4>
+          <p class="text-sm text-gray-500 dark:text-gray-400">No.29, Jalan 2, Taman Len Seng,<br>56000 Cheras, WP Kuala
+            Lumpur</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-100 dark:border-white/5 pt-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2026 Mipos Sdn Bhd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script>
+    const missionFilterBtns = document.querySelectorAll('.mission-filter-btn');
+    const missionCards = document.querySelectorAll('.mission-card');
+    missionFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        missionFilterBtns.forEach(b => { b.classList.remove('bg-primary', 'text-white', 'shadow-md'); b.classList.add('bg-white', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-300', 'border', 'border-gray-200', 'dark:border-gray-700'); });
+        btn.classList.add('bg-primary', 'text-white', 'shadow-md'); btn.classList.remove('bg-white', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-300', 'border', 'border-gray-200', 'dark:border-gray-700');
+        missionCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = ''; card.style.opacity = '0'; card.style.transform = 'translateY(10px)';
+            requestAnimationFrame(() => { card.style.transition = 'opacity 0.3s, transform 0.3s'; card.style.opacity = '1'; card.style.transform = 'translateY(0)'; });
+          } else { card.style.display = 'none'; }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

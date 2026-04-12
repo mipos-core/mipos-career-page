@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mipos Careers</title>
+  <meta name="description"
+    content="Apply to Mipos ShopTech or pitch your own project. Contact us for career opportunities in Cheras, KL." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F97316",
+            "primary-hover": "#EA580C",
+            secondary: "#FB923C",
+            accent: "#FCD34D",
+            "bg-light": "#FFF7ED",
+            "bg-dark": "#1F1528",
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#2D2438",
+            "text-main": "#374151",
+            "text-dark": "#E5E7EB",
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Nunito", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+
+<body
+  class="bg-bg-light dark:bg-bg-dark font-body text-text-main dark:text-text-dark transition-colors duration-300 antialiased min-h-screen flex flex-col">
+
+  <!-- Nav -->
+  <nav
+    class="fixed w-full z-50 bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-orange-100 dark:border-white/10"
+    id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3 group">
+          <div
+            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+            <span class="material-icons-round text-2xl">rocket_launch</span>
+          </div>
+          <span class="font-display font-bold text-3xl tracking-wide text-gray-900 dark:text-white">Mipos</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="/">Home</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/missions">Missions</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/openings">Openings</a>
+          <a class="font-bold text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+            href="/blog">Blog</a>
+          <a class="font-bold text-primary transition-colors" href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 transition-colors text-primary"
+            id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="material-icons-round dark:hidden">dark_mode</span>
+            <span class="material-icons-round hidden dark:block">light_mode</span>
+          </button>
+          <button
+            class="md:hidden p-2 rounded-full hover:bg-orange-100 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300"
+            id="mobile-menu-btn" aria-label="Open menu">
+            <span class="material-icons-round">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/">Home</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/missions">Missions</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/openings">Openings</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-white/5"
+          href="/blog">Blog</a>
+        <a class="block py-2 px-4 rounded-xl font-bold text-primary bg-orange-50 dark:bg-white/5"
+          href="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow pt-32 pb-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <span
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 text-primary font-bold text-sm mb-6 border border-orange-200 dark:border-orange-700/50">
+          <span class="material-icons-round text-sm">rocket_launch</span>
+          <span>Launch Your Career</span>
+        </span>
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">Get In Touch</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">
+          Ready to join Mipos? Whether you're applying for an open role or pitching your own mission — we want to hear
+          from you.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8">
+        <!-- Form (3 cols) -->
+        <div class="lg:col-span-3">
+          <div class="bg-white dark:bg-surface-dark rounded-3xl shadow-lg dark:border dark:border-white/10 p-8 md:p-10">
+            <h2 class="text-2xl font-display font-bold mb-6 flex items-center gap-2 text-gray-800 dark:text-white">
+              <span class="material-icons-round text-primary">mail</span> Send your application
+            </h2>
+            <form class="space-y-5" id="contact-form" onsubmit="handleSubmit(event)">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="space-y-2">
+                  <label class="block text-sm font-semibold text-gray-700 dark:text-gray-200" for="name">Full
+                    Name</label>
+                  <input
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-gray-900 dark:text-white"
+                    id="name" placeholder="Your name" type="text" required />
+                </div>
+                <div class="space-y-2">
+                  <label class="block text-sm font-semibold text-gray-700 dark:text-gray-200" for="email">Email</label>
+                  <input
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-gray-900 dark:text-white"
+                    id="email" placeholder="your@email.com" type="email" required />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-semibold text-gray-700 dark:text-gray-200" for="role">Interested
+                  Role</label>
+                <select
+                  class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 focus:border-primary outline-none text-gray-900 dark:text-white"
+                  id="role">
+                  <option>E-Commerce Executive</option>
+                  <option>POS BD Executive</option>
+                  <option>POS Customer Success Executive</option>
+                  <option>Warehouse Assistant</option>
+                  <option>Mission / Project (Freelance)</option>
+                  <option>General Application</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-semibold text-gray-700 dark:text-gray-200" for="message">Tell us about
+                  yourself</label>
+                <textarea
+                  class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-none text-gray-900 dark:text-white"
+                  id="message" placeholder="Why do you want to join Mipos? What makes you stand out?"
+                  rows="4"></textarea>
+              </div>
+              <button
+                class="w-full bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                type="submit" id="submit-btn">
+                Submit Application <span class="material-icons-round">send</span>
+              </button>
+            </form>
+            <div
+              class="hidden mt-4 p-4 rounded-xl bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 font-bold text-center"
+              id="success-msg">
+              🎉 Application received! We'll review and get back to you soon.
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar (2 cols) -->
+        <div class="lg:col-span-2 space-y-6">
+          <!-- Team photo -->
+          <div class="rounded-3xl overflow-hidden shadow-lg">
+            <img src="/images/team-core-group-showroom.jpeg" alt="Core Mipos team group photo at the showroom"
+              class="w-full h-56 object-cover" />
+          </div>
+
+          <!-- Info cards -->
+          <div
+            class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-orange-100 dark:border-white/10 shadow-sm">
+            <div class="flex items-start gap-3">
+              <div
+                class="w-10 h-10 bg-orange-100 dark:bg-orange-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="material-icons-round text-primary">location_on</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-800 dark:text-white">Our Location</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">No.29, Jalan 2, Taman Len Seng, 56000
+                  Cheras, WP Kuala Lumpur</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-orange-100 dark:border-white/10 shadow-sm">
+            <div class="flex items-start gap-3">
+              <div
+                class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="material-icons-round text-blue-600">schedule</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-800 dark:text-white">Working Hours</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Mon–Fri 9am–5pm | Sat 9am–2pm</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.maukerja.my/en/company/mipos-sdn-bhd" target="_blank"
+            class="block bg-white dark:bg-surface-dark rounded-2xl p-5 border border-orange-100 dark:border-white/10 shadow-sm hover:border-primary hover:shadow-md transition-all group">
+            <div class="flex items-start gap-3">
+              <div
+                class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="material-icons-round text-green-600">work</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-800 dark:text-white">Apply via MauKerja</p>
+                <p class="text-sm text-primary font-bold mt-1 group-hover:underline">View on MauKerja →</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="mailto:hr@mipos.io"
+            class="block bg-white dark:bg-surface-dark rounded-2xl p-5 border border-orange-100 dark:border-white/10 shadow-sm hover:border-primary hover:shadow-md transition-all group">
+            <div class="flex items-start gap-3">
+              <div
+                class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span class="material-icons-round text-purple-600">email</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-800 dark:text-white">Email Us</p>
+                <p class="text-sm text-primary font-bold mt-1 group-hover:underline">hr@mipos.io</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-white/5 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm text-gray-400">&copy; 2026 Mipos Sdn Bhd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const role = document.getElementById('role').value;
+      const message = document.getElementById('message').value;
+
+      // Build mailto link as fallback (no backend)
+      const subject = encodeURIComponent(`Career Application: ${role}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nRole: ${role}\n\n${message}`);
+      window.open(`mailto:hr@mipos.io?subject=${subject}&body=${body}`, '_blank');
+
+      // Show success message
+      document.getElementById('submit-btn').textContent = 'Sent! ✓';
+      document.getElementById('submit-btn').disabled = true;
+      document.getElementById('success-msg').classList.remove('hidden');
+    }
+  </script>
+</body>
+
+</html>
